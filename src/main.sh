@@ -7,7 +7,7 @@ read -p "Masukkan folder tujuan (Destination Folder) untuk menyimpan backup: " T
 read -p "Masukkan jumlah hari maksimum penyimpanan backup (Retention Days): " RETENTION_DAYS
 
 # Cek Folder SOURCE
-if [-d $SOURCE]; then
+if [ -d $SOURCE ]; then
     echo "Folder source ada"
 else
     echo "Folder source tidak ada"
@@ -15,17 +15,19 @@ else
 fi
 
 # Cek Folder Tujuan
-if [-d $TUJUAN]; then 
+if [ -d $TUJUAN ]; then 
     echo "Folder Tujuan udh ada"
 else 
     echo "Folder Tujuan blm ada"
     mkdir "$TUJUAN"
 fi
 
-# Catat Waktu Backup
-TIMESTAMP=$(date + "%Y%m%d-%H%M%S" )
+mkdir 
 
-START=$(date + "%Y-%m-%d-%H:%M:%S")
+# Catat Waktu Backup
+TIMESTAMP=$(date +"%Y%m%d-%H%M%S" )
+
+START=$(date +"%Y-%m-%d-%H:%M:%S")
 echo "$START | Backup dimulai: $SOURCE" >> "$TUJUAN/backup.log"
 
 # Membuat Backup
@@ -33,11 +35,11 @@ echo "Membuat backup..."
 tar -czf "$TUJUAN/backup-$TIMESTAMP.tar.gz" "$SOURCE"
 
 # Menyimpan Log backup
-if [$? -eq 0]; then
+if [ $? -eq 0 ]; then
     echo "Backup dimulai: $START"
 
     # Catat Waktu selesai Backup
-    END=$(date + "%Y-%m-%d-%H:%M:%S")
+    END=$(date +"%Y-%m-%d-%H:%M:%S")
     echo "$END | Backup selesai: $TUJUAN/backup-$TIMESTAMP.tar.gz" >> "$TUJUAN/backup.log"
     echo "Backup selesai: $END"
 
