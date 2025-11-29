@@ -7,7 +7,7 @@ read -p "Masukkan folder tujuan (Destination Folder) untuk menyimpan backup: " T
 read -p "Masukkan jumlah hari maksimum penyimpanan backup (Retention Days): " RETENTION_DAYS
 
 # Cek Folder SOURCE
-if [ -d $SOURCE ]; then
+if [ -d "$SOURCE" ]; then
     echo "Folder source ada"
 else
     echo "Folder source tidak ada"
@@ -15,7 +15,7 @@ else
 fi
 
 # Cek Folder Tujuan
-if [ -d $TUJUAN ]; then 
+if [ -d "$TUJUAN" ]; then 
     echo "Folder Tujuan udh ada"
 else 
     echo "Folder Tujuan blm ada"
