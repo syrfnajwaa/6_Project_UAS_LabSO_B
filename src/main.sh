@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Input
-echo "--- Pengaturan Backup Otomatis ---"
+echo "--- Sistem Backup Otomatis ---"
 read -p "Masukkan folder sumber (Source Folder) yang ingin di-backup: " SOURCE
 read -p "Masukkan folder tujuan (Destination Folder) untuk menyimpan backup: " TUJUAN
 read -p "Masukkan jumlah hari maksimum penyimpanan backup (Retention Days): " RETENTION_DAYS
