@@ -49,6 +49,9 @@ if [ $? -eq 0 ]; then
     echo "Ukuran backup: $SIZE"
 
     echo "Backup tersimpan di: $TUJUAN/backup-$TIMESTAMP.tar.gz"
+
+    # Rotasi backup
+    find "$TUJUAN" -name "backup-*.tar.gz" -mtime +"$RETENTION_DAYS" -exec rm {} \;
     echo "Backup lebih dari $RETENTION_DAYS hari dihapus (rotasi backup)"
 
 else
