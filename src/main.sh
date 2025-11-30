@@ -22,8 +22,6 @@ else
     mkdir "$TUJUAN"
 fi
 
-mkdir 
-
 # Catat Waktu Backup
 TIMESTAMP=$(date +"%Y%m%d-%H%M%S" )
 
