@@ -16,9 +16,9 @@ fi
 
 # Cek Folder Tujuan
 if [ -d "$TUJUAN" ]; then 
-    echo "Folder Tujuan udh ada"
+    echo "Folder Tujuan sudah ada"
 else 
-    echo "Folder Tujuan blm ada"
+    echo "Folder Tujuan belum ada"
     mkdir "$TUJUAN"
 fi
 
