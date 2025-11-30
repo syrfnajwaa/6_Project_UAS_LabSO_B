@@ -98,7 +98,9 @@ Backup lebih dari 1 hari dihapus (rotasi backup)
 ### **Hasil backup.log setelah running main.sh**
 ![alt text](image.png)
 
-## Anggota Kelompok
-Shara Sitta Safiruddin (2408107010067)
-Syarifah Najwa (2408107010064)
-Cut Mutia Rahmah (2408107010062)
+## Anggota Kelompok 6
+* Shara Sitta Safiruddin (2408107010067)
+
+* Syarifah Najwa (2408107010064)
+
+* Cut Mutia Rahmah (2408107010062)
