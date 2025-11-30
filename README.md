@@ -93,10 +93,10 @@ Backup lebih dari 1 hari dihapus (rotasi backup)
 ```
 
 ### **Hasil Running main.sh**
-![alt text](<WhatsApp Image 2025-11-30 at 16.47.51_803fb8a1.jpg>)
+![alt text](Terminal.jpg)
 
 ### **Hasil backup.log setelah running main.sh**
-![alt text](image.png)
+![alt text](Backup_log.png)
 
 ## Anggota Kelompok 6
 * Shara Sitta Safiruddin (2408107010067)
